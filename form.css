@@ -1,0 +1,103 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f5f5;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Row and column layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 0 0 48%;
+}
+
+/* Form title */
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Input box styles */
+.inputBox {
+    margin-bottom: 15px;
+}
+
+.inputBox span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.inputBox input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex .inputBox {
+    flex: 0 0 48%;
+}
+
+/* Cards image style */
+.inputBox img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Submit button style */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}

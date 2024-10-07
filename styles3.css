@@ -1,0 +1,175 @@
+/* Add a reset to avoid default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling for the body */
+body {
+    background-image: url(image/image38.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* Container for the form */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    color: #db5604;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.containerr {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input and textarea styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Button styling */
+input[type="submit"] {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Success message styling */
+.success {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Make the form more responsive with media queries */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+/* General styles for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+td a {
+    color: #28a745;
+    text-decoration: none;
+    padding: 5px;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive container */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto; /* Horizontal scroll for smaller screens */
+}
+.table-responsive td{
+    color: #fff;
+}
+
+/* Styling for mobile devices */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block; /* Make the table block elements for better readability */
+    }
+
+    th, td {
+        width: 100%; /* Ensure each row occupies full width */
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5px; /* Reduce padding for smaller screens */
+    }
+
+    th {
+        background-color: #f4f4f4;
+        color: #333;
+        font-weight: bold;
+    }
+
+    td a {
+        margin-right: 10px; /* Add space between Edit and Delete links */
+    }
+
+    /* Visually hide the header on mobile */
+    thead {
+        display: none;
+    }
+
+    /* Add a label before each cell content */
+    td:before {
+        content: attr(data-label); /* Use the label stored in each th element */
+        font-weight: bold;
+        margin-right: 10px;
+        color: #333;
+    }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 480px) {
+    td {
+        padding: 8px 3px;
+    }
+}
+
